@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var yC = (`       ||
+    /\\ ||
+   /  \\||
+  /    ||
+ /      \\
+/        \\`)
+    var nC = (`    /\\
+   /  \\
+  /    \\
+ /      \\
+/        \\`)
+    var yW = (`
+|        |
+|  O  O  |`)
+    var nW = (`
+|        |
+|        |`)
+    var yD = (`
+|    _   |
+|   | |  |
+|   | |  |`)
+    var nD = (`
+|        |
+|        |
+|        |`)
+    var chimney = prompt('Do you want a chimney? Yes or No?')
+    var windows = prompt('Do you want windows? Yes or No?')
+    var door = prompt('Do you want a door? Yes or No?')
+    if (chimney === 'Yes') {
+      var c = yC
+    } else if(chimney === 'No') {
+      var c = nC
+    } else {
+      console.log('Invalid input. Please use Yes or No')
+    }
+    if (windows === 'Yes') {
+      var w = yW
+    } else if(windows === 'No') {
+      var w = nW
+    } else {
+      console.log('Invalid input. Please use Yes or No')
+    }
+    if (door === 'Yes') {
+      var d = yD
+    } else if(door === 'No') {
+      var d = nD
+    } else {
+      console.log('Invalid input. Please use Yes or No')
+    }
+    console.log(c+w+d)
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
